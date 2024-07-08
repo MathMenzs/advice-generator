@@ -1,58 +1,59 @@
 body {
+  background-color: var(--Cor-body);
+  color: var(--Cor-texto);
+  height: 100vh;
   font-family: 'Manrope', sans-serif;
-  font-weight: 800;
+
 }
 
 main {
-  height: 100vh;
-  background-color: var(--Cor-body);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
-.advice-card {
+.advice-generator {
   background-color: var(--Cor-do-card);
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 320px;
-  padding: 30px 30px 0px;
+  justify-content: space-evenly;
+  width: 320px;
+  height: 200px;
+  padding: 31px;
   border-radius: 10px;
 }
 
-.advice-card .number-advice {
-  color: var(--Cor-botão-card-e-texto);
-  font-size: 7px;
-  letter-spacing: 3px;
+.titulo-conselho {
+  font-size: 9px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  letter-spacing: 3px;
+  color: var(--Cor-botão-card-e-texto);
 }
 
-.advice-card .text-advice {
-  color: var(--Cor-texto);
+.texto-conselho {
   text-align: center;
-  margin-bottom: 25px;
+  font-weight: 800;
+  margin-top: 15px;
 }
 
-.advice-card .divider-line {
+.icone-divisao {
   width: 100%;
+  margin-top: 24px;
 }
 
-.advice-card .advice-button {
-  border-radius: 50%;
-  padding: 10px;
+.link-botao {
+  transform: translateY(21px);
   background-color: var(--Cor-botão-card-e-texto);
-  transform: translateY(50%);
-  display: flex;
-  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
   border: none;
-  margin-top: 7px;
+  display: flex;
 }
 
-
-
-.advice-card .icon-image {
-  width: 12px;
-  height: 12px;
+.link-botao img {
+  width: 16px;
+  text-align: center;
 }
+
